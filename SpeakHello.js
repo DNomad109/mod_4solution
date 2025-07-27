@@ -1,15 +1,14 @@
 // STEP 2: Wrap the code in an IIFE
 (function (window) {
-  var byeSpeaker = {};
-  var speakWord = "Good Bye";
+  var helloSpeaker = {};
+  var speakWord = "Hello";
 
-  byeSpeaker.speak = function (name) {
+  helloSpeaker.speak = function (name) {
     console.log(speakWord + " " + name);
   };
 
-  window.byeSpeaker = byeSpeaker;
+  window.helloSpeaker = helloSpeaker;
 })(window);
-
 
 // STEP 3: Create an object, called 'helloSpeaker' to which you will attach
 // the "speak" method and which you will expose to the global context
